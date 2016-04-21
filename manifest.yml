@@ -1,8 +1,9 @@
 ---
 applications:
-- name: spring-music
+- name: spring-music-bluemix
+  host: spring-music-bluemix
   memory: 512M
   instances: 1
-  random-route: true
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
   path: build/libs/spring-music.war
 
